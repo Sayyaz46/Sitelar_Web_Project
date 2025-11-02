@@ -1,105 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Sitelar — Digital Agency</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sitelar — Home (Replica)</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-tlGfX0CkzX2xK1f/1e9mM6D7b2f+k+o2kLx7i8m4UqF9n7q6rGk2x0qc7rQKjQ6gq+3sXQY7OZ3oQ5OqgWcQJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Main Stylesheets -->
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="footer.css" />
 </head>
+
 <body>
-  <!-- Header -->
-  <header class="hero">
-    <nav class="navbar">
-      <h3 class="logo">Sitelar</h3>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h2>Launch Fast. Sell More. Grow Smarter.</h2>
-      <p>We design, build, and grow your online empire — from websites to Android apps.</p>
-      <a href="#contact" class="btn">Start Your Project</a>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero-inner">
+      <div class="hero-panel" aria-hidden="true">
+        <div class="service-frame">
+          <div class="service-grid">
+            <div class="svc"><div class="icon"><i class="fa-solid fa-code"></i></div><small>WEB<br>DEVELOPMENT</small></div>
+            <div class="svc"><div class="icon"><i class="fa-solid fa-laptop-code"></i></div><small>WEB-APP<br>DEVELOPMENT</small></div>
+            <div class="svc"><div class="icon"><i class="fa-brands fa-android"></i></div><small>ANDROID APP<br>DEVELOPMENT</small></div>
+            <div class="svc"><div class="icon"><i class="fa-regular fa-clock"></i></div><small>24/7 VIRTUAL<br>ASSISTANTS</small></div>
+            <div class="svc"><div class="icon"><i class="fa-brands fa-shopify"></i></div><small>FULL SHOPIFY<br>SUPPORT</small></div>
+            <div class="svc"><div class="icon"><i class="fa-solid fa-pen-ruler"></i></div><small>GRAPHICS AND<br>UI/UX DESIGN</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-brand">
+        <div class="brand-logo">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">
+            <h1>SITELAR</h1>
+            <p>ONE STOP SOLUTION FOR<br>ALL YOUR DIGITAL NEEDS</p>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721296.png" alt="Web Development" />
-        <h3>Web Development</h3>
-        <p>Custom websites that are fast, responsive, and conversion-focused.</p>
-      </div>
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/4727/4727424.png" alt="App Development" />
-        <h3>App Development</h3>
-        <p>Android and web apps built with modern frameworks for speed and stability.</p>
-      </div>
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974191.png" alt="UI/UX Design" />
-        <h3>UI/UX Design</h3>
-        <p>We craft engaging interfaces that make your users fall in love with your product.</p>
-      </div>
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Shopify Support" />
-        <h3>Shopify Support</h3>
-        <p>Full setup, optimization, and maintenance for your Shopify store.</p>
-      </div>
+  <!-- Clients -->
+  <section class="clients-row">
+    <h3>OUR TRUSTED CLIENTS</h3>
+    <div class="clients-list">
+      <div class="client">Flairtrends</div>
+      <div class="client">Gleame.</div>
+      <div class="client">Aventera</div>
+      <div class="client">Hombiz</div>
+      <div class="client">Elisabeth Virelle</div>
     </div>
   </section>
 
-  <!-- Clients Section -->
-  <section id="clients" class="clients">
-    <h2>Our Trusted Clients</h2>
-    <div class="client-logos">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Aventera_logo.png" alt="Aventera" />
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968778.png" alt="Google" />
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Microsoft" />
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732026.png" alt="Adobe" />
+  <!-- Who is Sitelar suitable for -->
+  <section class="who">
+    <h2>MANAGE YOUR ENTIRE BUSINESS IN A SINGLE SYSTEM</h2>
+    <p class="sub">WHO IS SITELAR SUITABLE FOR?</p>
+
+    <div class="cards">
+      <article class="card">
+        <h3>FOR SHOPIFY STORE OWNERS</h3>
+        <p>LAUNCH FAST. SELL MORE. SITELAR BUILDS AND UPGRADES SHOPIFY STORES FOR BOTH BRANDS AND DROPSHIPPERS.</p>
+        <strong>WHAT WE DO</strong>
+        <ul>
+          <li>FULL STORE SETUP OR REBUILD</li>
+          <li>THEME DESIGN AND CUSTOM SECTIONS</li>
+          <li>SPEED AND CONVERSION FIXES</li>
+          <li>PRODUCT DESIGN, PHOTOS, AND SEO LISTINGS</li>
+          <li>APP SETUP, CHECKOUT, UPSELLS, AND BUNDLES</li>
+        </ul>
+        <p class="highlight">RESULT: A CLEAN, FAST STORE THAT CONVERTS.</p>
+      </article>
+
+      <article class="card">
+        <h3>NEED A VIRTUAL ASSISTANT?</h3>
+        <p>GET TOP UNIVERSITY-GRADUATE VAs WHO KNOW ECOMMERCE. WE PLUG INTO YOUR WORKFLOW AND REPORT DAILY.</p>
+        <strong>WHAT WE HANDLE</strong>
+        <ul>
+          <li>PRODUCT RESEARCH AND SUPPLIER OUTREACH</li>
+          <li>LISTING, TAGS, IMAGES, AND SEO</li>
+          <li>ORDER PROCESSING, STOCK UPDATES, AND RETURNS</li>
+          <li>INBOX, CHAT, AND BASIC CUSTOMER SUPPORT</li>
+          <li>DATA ENTRY, REPORTS, CALENDARS, AND ADMIN</li>
+        </ul>
+        <p class="highlight">FLEXIBLE PLANS: PART-TIME OR FULL-TIME, NDA INCLUDED.</p>
+      </article>
+
+      <article class="card">
+        <h3>WEB & ANDROID APP DEVELOPMENT</h3>
+        <p>HAVE AN IDEA? WE DESIGN, BUILD, AND LAUNCH IT—END TO END.</p>
+        <strong>WE DELIVER</strong>
+        <ul>
+          <li>BUSINESS WEBSITES AND LANDING PAGES</li>
+          <li>CUSTOM DASHBOARDS AND PORTALS</li>
+          <li>ANDROID APPS AND PLAY STORE LAUNCH</li>
+          <li>SECURE APIS, DATABASES, AND ADMIN PANELS</li>
+          <li>ONGOING MAINTENANCE AND GROWTH SPRINTS</li>
+        </ul>
+        <p class="highlight">TECH WE USE: MERN STACK, ANDROID (JAVA), FLUTTER.</p>
+      </article>
     </div>
   </section>
 
   <!-- Stats -->
-  <section class="stats">
-    <div class="stat"><h3>196K+</h3><p>Lines of Code</p></div>
-    <div class="stat"><h3>50+</h3><p>Projects Completed</p></div>
-    <div class="stat"><h3>10+</h3><p>Years of Experience</p></div>
-    <div class="stat"><h3>30+</h3><p>Satisfied Clients</p></div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Let’s Build Something Amazing!</h2>
-    <p>Would you like to start a project with us? Contact us now.</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Modern Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <div class="footer-logo">
-        <div class="logo-icon">S</div>
-        <h3>Sitelar</h3>
+  <section class="stats-band">
+    <div class="stats-inner">
+      <div class="sitelar-mark">
+        <h3>SITELAR</h3>
+        <p>HELPING BUSINESS REINVENT ITSELF</p>
       </div>
-      <p>
-        Transforming businesses through innovative digital solutions.
-        We craft experiences that drive growth and success.
-      </p>
-    </div>
 
-    <div class="footer-links">
-      <div>
+      <div class="stats-blocks">
+        <div class="stat"><div class="num">30</div><small>SATISFIED CLIENTS</small></div>
+        <div class="stat"><div class="num">50</div><small>PROJECTS COMPLETED</small></div>
+        <div class="stat"><div class="num">10+</div><small>YEARS OF EXPERIENCE</small></div>
+        <div class="stat"><div class="num">196K+</div><small>LINES OF CODE</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services-grid">
+    <h2>LET OUR DIGITAL AGENCY BUILD YOUR ONLINE EMPIRE</h2>
+    <p class="sub">THE DIGITAL AGENCY THAT UNDERSTANDS YOUR CUSTOMERS AS WELL AS YOU DO.</p>
+
+    <div class="service-cards">
+      <div class="s-card"><i class="fa-solid fa-globe"></i><h4>WEB DESIGN</h4><p>We create visually compelling, user-centric web designs that align with your brand and drive engagement.</p></div>
+      <div class="s-card"><i class="fa-solid fa-globe"></i><h4>WEB DESIGN</h4><p>We create visually compelling, user-centric web designs that align with your brand and drive engagement.</p></div>
+      <div class="s-card"><i class="fa-solid fa-globe"></i><h4>WEB DESIGN</h4><p>We create visually compelling, user-centric web designs that align with your brand and drive engagement.</p></div>
+      <div class="s-card"><i class="fa-solid fa-globe"></i><h4>WEB DESIGN</h4><p>We create visually compelling, user-centric web designs that align with your brand and drive engagement.</p></div>
+      <div class="s-card"><i class="fa-solid fa-globe"></i><h4>WEB DESIGN</h4><p>We create visually compelling, user-centric web designs that align with your brand and drive engagement.</p></div>
+      <div class="s-card"><i class="fa-solid fa-globe"></i><h4>WEB DESIGN</h4><p>We create visually compelling, user-centric web designs that align with your brand and drive engagement.</p></div>
+    </div>
+  </section>
+
+  <!-- ✅ FOOTER moved OUTSIDE of the last section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand">
+        <div class="footer-logo">
+          <div class="footer-icon">S</div>
+          <h3>Sitelar</h3>
+        </div>
+        <p>
+          Transforming businesses through innovative digital solutions.<br>
+          We craft experiences that drive growth and success.
+        </p>
+      </div>
+
+      <div class="footer-col">
         <h4>Services</h4>
         <ul>
           <li><a href="#">Web Development</a></li>
@@ -108,7 +166,8 @@
           <li><a href="#">UI/UX Design</a></li>
         </ul>
       </div>
-      <div>
+
+      <div class="footer-col">
         <h4>Company</h4>
         <ul>
           <li><a href="#">About Us</a></li>
@@ -117,21 +176,22 @@
           <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
-    </div>
 
-    <div class="footer-social">
-      <h4>Connect</h4>
-      <div class="social-icons">
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      <div class="footer-col connect">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 Sitelar. All rights reserved. | Premium Digital Agency</p>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>© 2025 Sitelar. All rights reserved. | Premium Digital Agency</p>
+    </div>
+  </footer>
 
+</body>
+</html>
