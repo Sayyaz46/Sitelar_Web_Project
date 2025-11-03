@@ -2,31 +2,95 @@
    SITELAR DIGITAL AGENCY STYLE
    ============================ */
 
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #7B86F8 0%, #5C6BF0 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo h2 {
+  color: #1e1e2f;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1e1e2f;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #5C6BF0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 30px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* ---------- Root Variables ---------- */
 :root {
-  /* Primary backgrounds & gradients */
   --bg-dark: #0f1012;
   --hero-gradient-start: #1a1c1e;
   --hero-gradient-end: #29302c;
 
-  /* Panel & card backgrounds */
   --panel-bg: #f5f5f4;
   --card-dark: #373f38;
 
-  /* Accent colours */
   --accent: #8aa07e;
   --accent-2: #677a63;
 
-  /* Text & muted tones */
   --muted: #949494;
   --text: #101010;
   --white: #ffffff;
 
-  /* Shadows */
   --glass-shadow: 0 8px 30px rgba(0,0,0,0.34);
   --card-shadow: 0 20px 30px rgba(0,0,0,0.24);
 }
 
-/* ---------- GLOBAL ---------- */
+/* ---------- Global ---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,7 +101,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-color: #0a0a0a; /* full black base */
+  background-color: #0a0a0a;
 }
 
 body {
@@ -46,7 +110,6 @@ body {
   background: linear-gradient(180deg, #f2f2f2 0%, #f7f7f7 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -55,103 +118,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-/* ---------- HERO ---------- */
-.hero {
-  background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
-  color: var(--white);
-  padding: 48px 20px 24px;
-}
-
-.hero-inner {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-.hero-panel { flex: 0 0 52%; }
-
-.service-frame {
-  width: 100%;
-  max-width: 630px;
-  background: linear-gradient(#f8f9f8, #f2f3f2);
-  border-radius: 24px;
-  padding: 28px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  justify-items: center;
-}
-
-.svc {
-  text-align: center;
-  font-size: 12px;
-  color: #222;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-}
-
-.svc .icon {
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(180deg,#fff,#f0f0f0);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: #2b2b2b;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-}
-
-.svc small { font-weight: 600; }
-
-.hero-brand {
-  flex: 0 0 44%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.brand-mark {
-  width: 86px;
-  height: 86px;
-  background: linear-gradient(180deg, #fff 0%, #dfe6df 100%);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #222;
-  font-weight: 800;
-  font-size: 28px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-}
-
-.brand-text h1 {
-  font-size: 28px;
-  margin: 0;
-}
-
-.brand-text p {
-  margin: 4px 0 0;
-  color: rgba(255,255,255,0.85);
-  font-weight: 300;
 }
 
 /* ---------- TRUSTED CLIENTS ---------- */
