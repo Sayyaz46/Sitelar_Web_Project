@@ -1,6 +1,5 @@
 /* =======================================================
-   SITELAR DIGITAL AGENCY — FOOTER SECTION
-   Full-width black footer with top gradient & no white gaps
+   SITELAR DIGITAL AGENCY — FOOTER SECTION (FINAL FIXED)
    ======================================================= */
 
 html, body {
@@ -17,7 +16,7 @@ main {
   flex: 1;
   width: 100%;
   margin: 0;
-  padding: 0 0 80px; /* space above footer */
+  padding: 0 0 80px;
   box-sizing: border-box;
 }
 
@@ -28,7 +27,7 @@ main {
   padding: 80px 0 40px;
   color: #fff;
   background: linear-gradient(to top, #000 90%, rgba(0, 0, 0, 0.85) 100%);
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   left: 0;
   right: 0;
@@ -113,7 +112,7 @@ main {
 }
 
 .footer-col ul li a:hover {
-  color: var(--accent, #7B86F8);
+  color: #7B86F8;
 }
 
 /* ---------- SOCIAL ICONS ---------- */
@@ -123,21 +122,44 @@ main {
   margin-top: 10px;
 }
 
+/* visible icons with brand colors */
 .social-icons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background-color: #1c1f26;
-  color: #d0d2d6;
+  background-color: #1c1f26; /* dark background */
+  color: #ffffff; /* white icon */
+  font-size: 20px;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
+/* hover brand colors */
+.social-icons a:hover:nth-child(1) {
+  background-color: #0A66C2; /* LinkedIn */
+}
+.social-icons a:hover:nth-child(2) {
+  background-color: #1DA1F2; /* Twitter */
+}
+.social-icons a:hover:nth-child(3) {
+  background-color: #1877F2; /* Facebook */
+}
+.social-icons a:hover:nth-child(4) {
+  background-color: #E4405F; /* Instagram */
+}
+
 .social-icons a:hover {
-  background-color: var(--accent, #7B86F8);
-  color: #fff;
+  transform: translateY(-4px);
+}
+
+/* ensure icons are visible */
+.social-icons i {
+  color: inherit !important;
+  font-size: 18px;
+  line-height: 1;
 }
 
 /* ---------- FOOTER BOTTOM COPYRIGHT ---------- */
