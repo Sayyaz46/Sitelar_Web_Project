@@ -17,14 +17,9 @@
     rel="stylesheet"
   />
 
-  <!-- ✅ Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-tlGfX0CkzX2xK1f/1e9mM6D7b2f+k+o2kLx7i8m4UqF9n7q6rGk2x0qc7rQKjQ6gq+3sXQY7OZ3oQ5OqgWcQJQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+<!-- Correct Font Awesome 6.5+ (supports X/Twitter icon) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
 
   <!-- ✅ Custom CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -226,58 +221,71 @@
   <!-- =========================
        FOOTER SECTION
        ========================= -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-col brand">
-        <div class="footer-logo">
-          <div class="footer-icon">S</div>
-          <h3>Sitelar</h3>
-        </div>
-        <p>
-          Transforming businesses through innovative digital solutions.<br>
-          We craft experiences that drive growth and success.
-        </p>
-      </div>
+<footer class="footer">
+  <div class="footer-container">
 
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Mobile Development</a></li>
-          <li><a href="#">Digital Marketing</a></li>
-          <li><a href="#">UI/UX Design</a></li>
-        </ul>
+    <div class="footer-col brand">
+      <div class="footer-logo">
+        <div class="footer-icon">S</div>
+        <h3>Sitelar</h3>
       </div>
+      <p>
+        Transforming businesses through innovative digital solutions.<br>
+        We craft experiences that drive growth and success.
+      </p>
+    </div>
 
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Mobile Development</a></li>
+        <li><a href="#">Digital Marketing</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+      </ul>
+    </div>
 
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2025 Sitelar. All rights reserved. | Premium Digital Agency</p>
-    </div>
-  </footer>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Sitelar. All rights reserved. | Premium Digital Agency</p>
+  </div>
+</footer>
 
   <!-- ✅ Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
+<script>
   const menuToggle = document.getElementById('menu-toggle');
   const navLinks = document.getElementById('nav-links');
   const aboutBtn = document.getElementById('about-btn');
@@ -288,17 +296,16 @@
     navLinks.classList.toggle('active');
   });
 
-  // Toggle dropdown on click
+  // Toggle dropdown with animation
   aboutBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    aboutDropdown.style.display =
-      aboutDropdown.style.display === 'block' ? 'none' : 'block';
+    aboutDropdown.classList.toggle('show');
   });
 
-  // Close dropdown if clicked outside
+  // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
     if (!aboutBtn.contains(e.target) && !aboutDropdown.contains(e.target)) {
-      aboutDropdown.style.display = 'none';
+      aboutDropdown.classList.remove('show');
     }
   });
 </script>
